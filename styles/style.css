@@ -13,4 +13,26 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--page-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: var(--main-font), fantasy;
+}
+
+.header {
+  width: var(--width);
+  background-color: #fff;
+  color: currentColor;
+  margin: 100px auto;
+  text-align: center;
+  padding: var(--padding);
+}
+
+.header-title {
+  font-size: clamp(49px, 100%, 65px);
+}
+
+.header-text {
+  font-size: clamp(14px, 100%, 23px);
+  padding-top: 20px;
 }
