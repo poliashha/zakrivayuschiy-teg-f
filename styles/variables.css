@@ -5,7 +5,9 @@
     repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --width: clamp(375px, 100%, 700px);
-  --padding: clamp(122px, calc(120.06px + 0.52vw), 130px) clamp(16px, calc(-9.85px + 6.89vw), 122.5px);
+  --padding: clamp(122px, calc(120.06px + 0.52vw), 130px)
+    clamp(16px, calc(-9.85px + 6.89vw), 122.5px);
   --main-font: 'PressStart2P', fantasy;
   --accent-font: 'Inter', sans-serif;
+  --background-color: #fff;
 }
