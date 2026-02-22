@@ -10,7 +10,7 @@
 
 */
 
-@keyframes mashtab{
+@keyframes mashtab {
 
   from {
     transform: scale(1);
@@ -22,7 +22,7 @@
 
 }
 
-@keyframes boom{
+@keyframes boom {
 
   from {
     opacity: 0;
