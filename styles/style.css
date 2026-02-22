@@ -100,22 +100,25 @@
   top: 25px;
   right: 25px;
   color: #000;
-  -webkit-text-stroke: 1px var(--color-text);
+  text-shadow: 0 0 1px var(--color-text);
   font-size: 14px;
   text-transform: uppercase;
   opacity: 0.5;
   font-family: var(--main-font);
 }
 
-@supports (text-stroke: 1px var(--color-text)) {
+@supports (-webkit-text-stroke: 1px var(--color-text)) {
+
   .img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--color-text);
+    text-stroke: 1px var(--color-text);
   }
+
 }
 
 .main__title {
-  font-weight: 715;
+  font-variation-settings: 'wght' 715;
   padding: 4px 10px;
   font-size: 18px;
 }
@@ -171,7 +174,6 @@
   padding: 21px 20px;
   border: 2px solid #000;
   background-color: var(--background-color);
-  
 }
 
 .block {
@@ -316,7 +318,6 @@ dialog::backdrop {
 }
 
 @media (width <= 375px) {
-
   .box-button {
     display: flex;
     flex-direction: column;
@@ -339,12 +340,12 @@ dialog::backdrop {
     height: 28px;
   }
 
-  dialog[open]{
+  dialog[open] {
     max-width: 341px;
     padding: 30px 40px;
   }
 
   .dialog__button {
-  padding: 12.5px 0;
-}
+    padding: 12.5px 0;
+  }
 }

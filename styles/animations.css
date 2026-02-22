@@ -11,20 +11,26 @@
 */
 
 @keyframes mashtab{
+
   from{
     transform: scale(1);
   }
+
   to{
     transform: scale(1.25);
   }
+
 }
 
 @keyframes boom{
+
   from{
     opacity: 0;
   }
+
   to{
     opacity: 1;
   }
+  
 }
 
