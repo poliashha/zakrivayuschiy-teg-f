@@ -141,7 +141,8 @@
 
 .card__like-button {
   background-color: transparent;
-  padding: 12.5px 37px;
+  width: 130px;
+  height: 38px;
   border: 2px solid #000;
 }
 
@@ -152,6 +153,7 @@
   line-height: 90%;
   color: var(--color-text);
   mix-blend-mode: difference;
+  display: block;
 }
 
 .card__icon-button {
@@ -161,28 +163,26 @@
   width: 48px;
   height: 48px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
-  
 }
 
 .button {
   padding: 21px 20px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
   border: 2px solid #000;
   background-color: var(--background-color);
+  
 }
 
 .block {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 dialog[open] {
   max-width: 353px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -244,6 +244,107 @@ dialog::backdrop {
   border: 2px solid #000;
 }
 
-.sparks{
+.sparks {
   opacity: 0;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.main-body {
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--svg-color);
+  transition-delay: 0s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--svg-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: 0.3s linear 0s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition: 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: 0.3s linear 0.06s;
+}
+
+.is-liked {
+  transform-origin: center;
+  animation: mashtab 0.3s ease-in 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  animation: boom 0.3s ease-in 0.3s;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.box-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width <= 375px) {
+
+  .box-button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    padding: 17.5px 20px;
+  }
+
+  .desktop-icon {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
+
+  dialog[open]{
+    max-width: 341px;
+    padding: 30px 40px;
+  }
+
+  .dialog__button {
+  padding: 12.5px 0;
+}
 }
