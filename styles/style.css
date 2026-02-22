@@ -352,12 +352,12 @@ dialog::backdrop {
     padding: 12.5px 0;
   }
 
-  .main__image{
+  .main__image {
     max-width: 371px;
     max-height: 371px;
   }
 
-  .header{
+  .header {
     margin-bottom: 98px;
   }
 }

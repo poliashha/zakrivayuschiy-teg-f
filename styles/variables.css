@@ -1,5 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+  
   --page-gradient:
     repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
@@ -14,4 +15,5 @@
   --svg-color: #000;
   --animation-fill-color: #f00;
   --card-text-weight: 715; 
+
 }
