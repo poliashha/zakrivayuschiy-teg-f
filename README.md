@@ -1,1 +1,1 @@
-https://poliashha.github.io/zakrivayuschiy-teg-f/
+https://github.com/poliashha/zakrivayuschiy-teg-f
