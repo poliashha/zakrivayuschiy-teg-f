@@ -10,4 +10,7 @@
   --main-font: 'PressStart2P', fantasy;
   --accent-font: 'Inter', sans-serif;
   --background-color: #fff;
+  --color-text: #fff;
+  --svg-color: #000;
+  --animation-fill-color: #f00;
 }
