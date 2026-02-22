@@ -12,11 +12,11 @@
 
 @keyframes mashtab{
 
-  from{
+  from {
     transform: scale(1);
   }
 
-  to{
+  to {
     transform: scale(1.25);
   }
 
@@ -24,13 +24,13 @@
 
 @keyframes boom{
 
-  from{
+  from {
     opacity: 0;
   }
 
-  to{
+  to {
     opacity: 1;
   }
-  
+
 }
 
