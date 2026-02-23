@@ -122,7 +122,8 @@
 }
 
 .main__title {
-  font-variation-settings: 'wght' var(----card-text-weight);
+  font-variation-settings: 'wght' var(--card-text-weight);
+  font-weight: var(--card-text-weight);
   padding: 4px 10px;
   font-size: 18px;
 }
@@ -303,6 +304,10 @@ dialog::backdrop {
 .is-liked {
   transform-origin: center;
   animation: mashtab 0.3s ease-in 0.1s;
+}
+
+.register__button{
+  text-transform: uppercase;
 }
 
 .like-icon.is-liked .sparks {
