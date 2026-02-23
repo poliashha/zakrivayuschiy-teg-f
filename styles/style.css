@@ -306,7 +306,7 @@ dialog::backdrop {
   animation: mashtab 0.3s ease-in 0.1s;
 }
 
-.register__button{
+.register__button {
   text-transform: uppercase;
 }
 
